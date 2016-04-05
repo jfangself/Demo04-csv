@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-TestMultipleBrowserSuiteName">
+              <span class="suite-name border-failed">TestMultipleBrowserSuiteName</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-TestMultipleBrowserSuiteName">
+                    <span>D:\My Lesson\Automation\workspace\Demo04-csv\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-TestMultipleBrowserSuiteName">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-TestMultipleBrowserSuiteName">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-TestMultipleBrowserSuiteName">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-TestMultipleBrowserSuiteName">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-TestMultipleBrowserSuiteName">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-TestMultipleBrowserSuiteName">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods, 1 failed,  5 skipped,  3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestMultipleBrowserSuiteName" class="hide-methods failed suite-TestMultipleBrowserSuiteName"> (hide)</a> <!-- hide-methods failed suite-TestMultipleBrowserSuiteName -->
+                      <a href="#" panel-name="suite-TestMultipleBrowserSuiteName" class="show-methods failed suite-TestMultipleBrowserSuiteName"> (show)</a> <!-- show-methods failed suite-TestMultipleBrowserSuiteName -->
+                    </span>
+                    <div class="method-list-content failed suite-TestMultipleBrowserSuiteName">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestMultipleBrowserSuiteName" title="demo.selenium.TestDataDrivenByCSVFile" hash-for-method="testLogin(u1@testb.dom, p, Welcome u1)">testLogin(u1@testb.dom, p, Welcome u1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestMultipleBrowserSuiteName -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-TestMultipleBrowserSuiteName" class="hide-methods skipped suite-TestMultipleBrowserSuiteName"> (hide)</a> <!-- hide-methods skipped suite-TestMultipleBrowserSuiteName -->
+                      <a href="#" panel-name="suite-TestMultipleBrowserSuiteName" class="show-methods skipped suite-TestMultipleBrowserSuiteName"> (show)</a> <!-- show-methods skipped suite-TestMultipleBrowserSuiteName -->
+                    </span>
+                    <div class="method-list-content skipped suite-TestMultipleBrowserSuiteName">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestMultipleBrowserSuiteName" title="demo.selenium.TestDataDrivenByCSVFile" hash-for-method="testLogin(u3@testb.dom, p, Welcome u3)">testLogin(u3@testb.dom, p, Welcome u3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestMultipleBrowserSuiteName" title="demo.selenium.TestDataDrivenByCSVFile" hash-for-method="testLogin(u2@testb.dom, p, Welcome u2)">testLogin(u2@testb.dom, p, Welcome u2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestMultipleBrowserSuiteName" title="demo.selenium.TestDataDrivenByCSVFile" hash-for-method="testLogin(u1@testb.dom, p, Welcome u1)">testLogin(u1@testb.dom, p, Welcome u1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestMultipleBrowserSuiteName" title="demo.selenium.TestDataDrivenByCSVFile" hash-for-method="testLogin(u2@testb.dom, p, Welcome u2)">testLogin(u2@testb.dom, p, Welcome u2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestMultipleBrowserSuiteName" title="demo.selenium.TestDataDrivenByCSVFile" hash-for-method="testLogin(u3@testb.dom, p, Welcome u3)">testLogin(u3@testb.dom, p, Welcome u3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-TestMultipleBrowserSuiteName -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestMultipleBrowserSuiteName" class="hide-methods passed suite-TestMultipleBrowserSuiteName"> (hide)</a> <!-- hide-methods passed suite-TestMultipleBrowserSuiteName -->
+                      <a href="#" panel-name="suite-TestMultipleBrowserSuiteName" class="show-methods passed suite-TestMultipleBrowserSuiteName"> (show)</a> <!-- show-methods passed suite-TestMultipleBrowserSuiteName -->
+                    </span>
+                    <div class="method-list-content passed suite-TestMultipleBrowserSuiteName">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestMultipleBrowserSuiteName" title="demo.selenium.TestDataDrivenByCSVFile" hash-for-method="testLogin(u3@testb.dom, p, Welcome u3)">testLogin(u3@testb.dom, p, Welcome u3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestMultipleBrowserSuiteName" title="demo.selenium.TestDataDrivenByCSVFile" hash-for-method="testLogin(u1@testb.dom, p, Welcome u1)">testLogin(u1@testb.dom, p, Welcome u1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestMultipleBrowserSuiteName" title="demo.selenium.TestDataDrivenByCSVFile" hash-for-method="testLogin(u2@testb.dom, p, Welcome u2)">testLogin(u2@testb.dom, p, Welcome u2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestMultipleBrowserSuiteName -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestMultipleBrowserSuiteName" class="panel TestMultipleBrowserSuiteName">
+          <div class="suite-TestMultipleBrowserSuiteName-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">demo.selenium.TestDataDrivenByCSVFile</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(u1@testb.dom, p, Welcome u1)">
+                  </a> <!-- testLogin(u1@testb.dom, p, Welcome u1) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(u1@testb.dom, p, Welcome u1)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+Build info: version: &apos;2.49.0&apos;, revision: &apos;365eeb4&apos;, time: &apos;2016-01-13 18:33:29&apos;
+System info: host: &apos;Num30-PC&apos;, ip: &apos;10.13.2.139&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:12775/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 6f031d96-d4d9-424b-ace0-892162a4dbeb
+*** Element info: {Using=xpath, value=//*[@id=&apos;textfield-1018-inputEl&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at demo.selenium.TestDataDrivenByCSVFile.testLogin(TestDataDrivenByCSVFile.java:53)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestMultipleBrowserSuiteName-class-failed -->
+          <div class="suite-TestMultipleBrowserSuiteName-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">demo.selenium.TestDataDrivenByCSVFile</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(u3@testb.dom, p, Welcome u3)">
+                  </a> <!-- testLogin(u3@testb.dom, p, Welcome u3) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(u3@testb.dom, p, Welcome u3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(u2@testb.dom, p, Welcome u2)">
+                  </a> <!-- testLogin(u2@testb.dom, p, Welcome u2) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(u2@testb.dom, p, Welcome u2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(u1@testb.dom, p, Welcome u1)">
+                  </a> <!-- testLogin(u1@testb.dom, p, Welcome u1) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(u1@testb.dom, p, Welcome u1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(u2@testb.dom, p, Welcome u2)">
+                  </a> <!-- testLogin(u2@testb.dom, p, Welcome u2) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(u2@testb.dom, p, Welcome u2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(u3@testb.dom, p, Welcome u3)">
+                  </a> <!-- testLogin(u3@testb.dom, p, Welcome u3) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(u3@testb.dom, p, Welcome u3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestMultipleBrowserSuiteName-class-skipped -->
+          <div class="suite-TestMultipleBrowserSuiteName-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">demo.selenium.TestDataDrivenByCSVFile</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(u3@testb.dom, p, Welcome u3)">
+                  </a> <!-- testLogin(u3@testb.dom, p, Welcome u3) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(u3@testb.dom, p, Welcome u3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(u1@testb.dom, p, Welcome u1)">
+                  </a> <!-- testLogin(u1@testb.dom, p, Welcome u1) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(u1@testb.dom, p, Welcome u1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(u2@testb.dom, p, Welcome u2)">
+                  </a> <!-- testLogin(u2@testb.dom, p, Welcome u2) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(u2@testb.dom, p, Welcome u2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestMultipleBrowserSuiteName-class-passed -->
+        </div> <!-- panel TestMultipleBrowserSuiteName -->
+        <div panel-name="test-xml-TestMultipleBrowserSuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\My Lesson\Automation\workspace\Demo04-csv\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;TestMultipleBrowserSuiteName&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;FirefoxTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;demo.selenium.TestDataDrivenByCSVFile&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FirefoxTest --&gt;
+  &lt;test name=&quot;IETest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;ie&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;demo.selenium.TestDataDrivenByCSVFile&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- IETest --&gt;
+  &lt;test name=&quot;ChromeTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;demo.selenium.TestDataDrivenByCSVFile&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+&lt;/suite&gt; &lt;!-- TestMultipleBrowserSuiteName --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestMultipleBrowserSuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestMultipleBrowserSuiteName</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">FirefoxTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">IETest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ChromeTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestMultipleBrowserSuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestMultipleBrowserSuiteName</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestMultipleBrowserSuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestMultipleBrowserSuiteName</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestMultipleBrowserSuiteName');
+function tableData_TestMultipleBrowserSuiteName() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testLogin')
+data.setCell(0, 2, 'demo.selenium.TestDataDrivenByCSVFile')
+data.setCell(0, 3, 20961);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testLogin')
+data.setCell(1, 2, 'demo.selenium.TestDataDrivenByCSVFile')
+data.setCell(1, 3, 20632);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testLogin')
+data.setCell(2, 2, 'demo.selenium.TestDataDrivenByCSVFile')
+data.setCell(2, 3, 20030);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testLogin')
+data.setCell(3, 2, 'demo.selenium.TestDataDrivenByCSVFile')
+data.setCell(3, 3, 5242);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testLogin')
+data.setCell(4, 2, 'demo.selenium.TestDataDrivenByCSVFile')
+data.setCell(4, 3, 7);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testLogin')
+data.setCell(5, 2, 'demo.selenium.TestDataDrivenByCSVFile')
+data.setCell(5, 3, 3);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testLogin')
+data.setCell(6, 2, 'demo.selenium.TestDataDrivenByCSVFile')
+data.setCell(6, 3, 2);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testLogin')
+data.setCell(7, 2, 'demo.selenium.TestDataDrivenByCSVFile')
+data.setCell(7, 3, 1);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testLogin')
+data.setCell(8, 2, 'demo.selenium.TestDataDrivenByCSVFile')
+data.setCell(8, 3, 1);
+window.suiteTableData['TestMultipleBrowserSuiteName']= { tableData: data, tableDiv: 'times-div-TestMultipleBrowserSuiteName'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-TestMultipleBrowserSuiteName">
+              </div> <!-- times-div-TestMultipleBrowserSuiteName -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestMultipleBrowserSuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestMultipleBrowserSuiteName</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestMultipleBrowserSuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestMultipleBrowserSuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">demo.selenium.TestDataDrivenByCSVFile</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(ie)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLogin(u1@testb.dom, p, Welcome u1)</span>
+                <span class="method-start">2075 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(u1@testb.dom, p, Welcome u1)</span>
+                <span class="method-start">4165 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">9419 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testLogin(u2@testb.dom, p, Welcome u2)</span>
+                <span class="method-start">9433 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(u3@testb.dom, p, Welcome u3)</span>
+                <span class="method-start">9438 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">23037 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">24354 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLogin(u2@testb.dom, p, Welcome u2)</span>
+                <span class="method-start">25806 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">45837 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testLogin(u1@testb.dom, p, Welcome u1)</span>
+                <span class="method-start">46501 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(u2@testb.dom, p, Welcome u2)</span>
+                <span class="method-start">46524 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(u3@testb.dom, p, Welcome u3)</span>
+                <span class="method-start">46538 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">47152 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLogin(u3@testb.dom, p, Welcome u3)</span>
+                <span class="method-start">48155 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">68789 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

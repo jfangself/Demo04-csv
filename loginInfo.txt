@@ -1,0 +1,3 @@
+u1@testb.dom,p,Welcome u1
+u2@testb.dom,p,Welcome u2
+u3@testb.dom,p,Welcome u3

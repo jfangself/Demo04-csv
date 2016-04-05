@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [TestMultipleBrowserSuiteName]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="IETest(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="demo.selenium.TestDataDrivenByCSVFile">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="testLogin" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- demo.selenium.TestDataDrivenByCSVFile -->
+    </classes>
+  </test> <!-- IETest(failed) -->
+  <test name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="demo.selenium.TestDataDrivenByCSVFile">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="testLogin"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- demo.selenium.TestDataDrivenByCSVFile -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [TestMultipleBrowserSuiteName] -->
